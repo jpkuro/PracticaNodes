@@ -1,0 +1,41 @@
+.encabezado {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(18, 31, 56);
+  border-radius: 10px;
+  
+}
+.encabezado ul{
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.encabezado a {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  border: 15px;
+  padding:  10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  display: block;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+
+body {
+    background-color: rgb(41, 40, 40);
+}
+
+h1 {
+    color: white;
+}
+
+p {
+  text-align: justify;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: antiquewhite;
+}

@@ -2,6 +2,7 @@
 let http = require('http');
 let fs = require('fs');
 let path = require('path');
+const { error } = require('console');
 
 http.createServer(function (req,res){
 
@@ -35,6 +36,24 @@ http.createServer(function (req,res){
         }
         res.writeHead(200, {'content-type': tipoExt});
         res.end(data);
+    });
+
+    const mysql = require('mysql2');
+
+    const conexion = mysql.createConnection({
+        host: 'localhost',
+        port: 3366,
+        user: 'root',
+        password: 'Kuro921*',
+        database: 'resistencias'
+    });
+
+    conexion.connect((error)=>{
+        if(error){
+            console.log('error al conectar a base de datos', error);
+            return;
+        }
+        console.log('conectado correctamente a base');
     });
 
 /*

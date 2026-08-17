@@ -1,7 +1,7 @@
 .encabezado {
   text-align: center;
   text-transform: uppercase;
-  background-color: rgb(18, 31, 56);
+  background-color: rgb(36, 49, 71);
   border-radius: 10px;
   
 }
@@ -16,7 +16,7 @@
 
 .encabezado a {
   color: rgb(255, 255, 255);
-  background-color: black;
+  background-color: rgb(71, 66, 66);
   border: 15px;
   padding:  10px 20px;
   text-decoration: none;
@@ -32,10 +32,37 @@ body {
 
 h1 {
     color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 p {
   text-align: justify;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: antiquewhite;
+  color: aliceblue;
+ font-size: 30px;
+}
+
+ul li{
+  color: aliceblue;
+  text-align: justify;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+.consolidado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:  20px;
+}
+.consolidado img{
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.consolidado ul{
+  margin: 0;
+  padding-left: 20px;
 }
